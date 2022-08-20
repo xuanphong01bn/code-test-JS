@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+    <link rel="Stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/themes/dark-hive/jquery-ui.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.js"></script>
+
+    <style type="text/css">
+        #navigationMenu {
+            width: 270px;
+        }
+
+        .single-menu-item .ui-icon {
+            display: none !important;
+        }
+
+        .single-menu-container {
+            display: none !important;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('#navigationMenu').accordion({
+                collapsible: true,
+                navigation: true,
+                clearStyle: true
+            });
+
+            $('.single-menu-item').unbind('click');
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="navigationMenu">
+        <h3 class="single-menu-item">
+            <a href="#">Home </a>
+        </h3>
+        <div class="single-menu-container">
+        </div>
+        <h3>
+            <a href="#">Projects</a>
+        </h3>
+        <div>
+            <ul>
+                <li><a href="#1">Project 1</a> </li>
+                <li><a href="#2">Project 2 </a></li>
+                <li><a href="#3">Project 3 </a></li>
+            </ul>
+        </div>
+        <h3 class="single-menu-item">
+            <a href="#">About me</a>
+        </h3>
+        <div class="single-menu-container">
+        </div>
+    </div>
+</body>
+
+</html>
